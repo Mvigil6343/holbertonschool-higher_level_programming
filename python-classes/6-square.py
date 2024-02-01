@@ -6,8 +6,18 @@ class Square:
     """a class Square that defines a square by: (based on 5-square.py)"""
     def __init__(self, size=0, position=(0, 0)):
         """Constructor method"""
-        self.__size = size
-        self.__position = position
+        if type(size) is not int:
+            raise TypeError('size must be an integer')
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
+        if type(position) is not tuple or position[0] < 0 or position[1] < 0\
+                or len(position) != 2 or type(position[0]) is not int\
+                or type(position[1]) is not int:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        else:
+            self.__position = position
 
     @property
     def size(self):
