@@ -47,9 +47,5 @@ class Square:
             return None
         for b in range(self.__position[1]):
             print()
-        for x in range(self.__size):
-            for a in range(self.__position[0]):
-                print(" ", end="")
-            for y in range(self.__size):
-                print("#", end="")
-            print()
+        for a in range(self.__size):
+            print(" " * self.__position[0] + "#" * self.__size)
