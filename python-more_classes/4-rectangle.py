@@ -51,7 +51,7 @@ class Rectangle:
             return 0
 
     def __str__(self):
-        """method that returns a string of the Rectangle with the character #"""
+        """method that returns a string of the Rectangle character #"""
         string = ""
         if self.width == 0 or self.height == 0:
             return string
