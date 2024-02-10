@@ -2,9 +2,6 @@
 """a Rectangle"""
 
 
-from typing import Any
-
-
 class Rectangle:
     """a class Rectangle that defines a Rectangle"""
     def __init__(self, width=0, height=0):
