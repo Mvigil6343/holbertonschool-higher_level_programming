@@ -22,3 +22,25 @@ class Square(Rectangle):
         """shows the class name and the attributes"""
         return f"[{type(self).__name__}] ({self.id}) {self.x}\
 /{self.y} - {self.width}"
+
+    def update(self, *args, **kwargs):
+        """assigns an argument to each attribute"""
+        if args:
+            if len(args) > 0:
+                self.id = args[0]
+            if len(args) > 1:
+                self.size = args[1]
+            if len(args) > 2:
+                self.x = args[2]
+            if len(args) > 3:
+                self.y = args[3]
+        else:
+            for k, v in kwargs.items():
+                if k == "id":
+                    self.id = v
+                if k == "size":
+                    self.size = v
+                if k == "x":
+                    self.x = v
+                if k == "y":
+                    self.y = v
