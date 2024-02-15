@@ -74,11 +74,15 @@ class Rectangle(Base):
         """method that prints in stdout the rectangle"""
         if self.__width == 0 or self.__height == 0:
             print()
-
-        for x in range(self.__height):
-            for y in range(self.__width):
-                print("#", end="")
-            print()
+        else:
+            for a in range(self.__y):
+                print()
+            for x in range(self.__height):
+                for a in range(self.__x):
+                    print(" ", end="")
+                for y in range(self.__width):
+                    print("#", end="")
+                print()
 
     def __str__(self):
         """shows the class name and the values"""
