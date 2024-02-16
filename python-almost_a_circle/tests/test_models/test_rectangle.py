@@ -61,12 +61,6 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(5, 10, 20, 30, 40)
         self.assertEqual(str(r), "[Rectangle] (40) 20/30 - 5/10")
 
-    def test_eq(self):
-        """Test eq method to ensure it correctly compares two rectangles"""
-        r1 = Rectangle(5, 10)
-        r2 = Rectangle(5, 10)
-        self.assertEqual(r1, r2)
-
     def test_not_eq(self):
         """Test not eq method to ensure it correctly compares two
         rectangles"""

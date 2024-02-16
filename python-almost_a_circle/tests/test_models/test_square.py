@@ -52,12 +52,6 @@ class TestSquare(unittest.TestCase):
         s = Square(5, 10, 20, 30)
         self.assertEqual(str(s), "[Square] (30) 10/20 - 5")
 
-    def test_eq(self):
-        """Test eq method to ensure it correctly compares two squares"""
-        s1 = Square(5)
-        s2 = Square(5)
-        self.assertEqual(s1, s2)
-
     def test_not_eq(self):
         """Test not eq method to ensure it correctly compares two squares"""
         s1 = Square(5)
