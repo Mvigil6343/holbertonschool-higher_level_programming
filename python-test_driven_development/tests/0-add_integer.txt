@@ -1,0 +1,14 @@
+>>> sum = __import__('0-add_integer').add_integer
+    >>> sum(1, 2)
+    3
+
+    >>> sum('2', 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> sum(-98)
+    0
+
+    >>> sum()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
